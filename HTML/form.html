@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <form action="index.php" method="post" enctype="multipart/form-data">
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Age -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120" required><br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[98|97]{8}" required><br><br>
+
+        <!-- Faculty -->
+        <label for="faculty">Faculty:</label>
+        <select id="faculty" name="faculty" required>
+            <option value="">Select</option>
+            <option value="science">Science</option>
+            <option value="arts">Arts</option>
+            <option value="commerce">Commerce</option>
+            <option value="engineering">Engineering</option>
+        </select><br><br>
+
+        <!-- Address -->
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea><br><br>
+
+        <!-- File -->
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file" multiple required><br><br>
+
+        <!-- Range -->
+        <label for="range">Range:</label>
+        <input type="range" id="range" name="range" min="0" max="100"><br><br>
+
+        <!-- Color -->
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <!-- Datetime -->
+        <label for="datetime">Date and Time:</label>
+        <input type="datetime-local" id="datetime" name="datetime"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
