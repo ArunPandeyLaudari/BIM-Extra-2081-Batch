@@ -1,0 +1,20 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     font-family: "Roboto", sans-serif;
+}
+
+
+.conatiner{
+    height: 100vh;
+    width: 100%;
+    /* background-color: rgb(43, 208, 145); */
+    background-image: url('../images/arun.jpg');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: right;
+    background-color: red;
+    background-clip: border-box;
+}
