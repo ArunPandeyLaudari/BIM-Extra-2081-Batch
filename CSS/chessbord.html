@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chessboard using Position</title>
+  <style>
+    body {
+      margin: 0;
+      background: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .chessboard {
+      position: relative;
+      width: 320px;
+      height: 320px;
+      border: 4px solid #000;
+    }
+    .square {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="chessboard">
+    <!-- Manually adding 64 squares with absolute position -->
+    <!-- Each square is 40x40px -->
+    <!-- Alternating colors based on position -->
+    
+    <!-- Loop through 8 rows and 8 columns manually -->
+    <!-- Row 0 -->
+    <div class="square" style="top:0px; left:0px; background:white;"></div>
+    <div class="square" style="top:0px; left:40px; background:black;"></div>
+    <div class="square" style="top:0px; left:80px; background:white;"></div>
+    <div class="square" style="top:0px; left:120px; background:black;"></div>
+    <div class="square" style="top:0px; left:160px; background:white;"></div>
+    <div class="square" style="top:0px; left:200px; background:black;"></div>
+    <div class="square" style="top:0px; left:240px; background:white;"></div>
+    <div class="square" style="top:0px; left:280px; background:black;"></div>
+
+    <!-- Row 1 -->
+    <div class="square" style="top:40px; left:0px; background:black;"></div>
+    <div class="square" style="top:40px; left:40px; background:white;"></div>
+    <div class="square" style="top:40px; left:80px; background:black;"></div>
+    <div class="square" style="top:40px; left:120px; background:white;"></div>
+    <div class="square" style="top:40px; left:160px; background:black;"></div>
+    <div class="square" style="top:40px; left:200px; background:white;"></div>
+    <div class="square" style="top:40px; left:240px; background:black;"></div>
+    <div class="square" style="top:40px; left:280px; background:white;"></div>
+
+    <!-- Row 2 -->
+    <div class="square" style="top:80px; left:0px; background:white;"></div>
+    <div class="square" style="top:80px; left:40px; background:black;"></div>
+    <div class="square" style="top:80px; left:80px; background:white;"></div>
+    <div class="square" style="top:80px; left:120px; background:black;"></div>
+    <div class="square" style="top:80px; left:160px; background:white;"></div>
+    <div class="square" style="top:80px; left:200px; background:black;"></div>
+    <div class="square" style="top:80px; left:240px; background:white;"></div>
+    <div class="square" style="top:80px; left:280px; background:black;"></div>
+
+    <!-- Row 3 -->
+    <div class="square" style="top:120px; left:0px; background:black;"></div>
+    <div class="square" style="top:120px; left:40px; background:white;"></div>
+    <div class="square" style="top:120px; left:80px; background:black;"></div>
+    <div class="square" style="top:120px; left:120px; background:white;"></div>
+    <div class="square" style="top:120px; left:160px; background:black;"></div>
+    <div class="square" style="top:120px; left:200px; background:white;"></div>
+    <div class="square" style="top:120px; left:240px; background:black;"></div>
+    <div class="square" style="top:120px; left:280px; background:white;"></div>
+
+    <!-- Row 4 -->
+    <div class="square" style="top:160px; left:0px; background:white;"></div>
+    <div class="square" style="top:160px; left:40px; background:black;"></div>
+    <div class="square" style="top:160px; left:80px; background:white;"></div>
+    <div class="square" style="top:160px; left:120px; background:black;"></div>
+    <div class="square" style="top:160px; left:160px; background:white;"></div>
+    <div class="square" style="top:160px; left:200px; background:black;"></div>
+    <div class="square" style="top:160px; left:240px; background:white;"></div>
+    <div class="square" style="top:160px; left:280px; background:black;"></div>
+
+    <!-- Row 5 -->
+    <div class="square" style="top:200px; left:0px; background:black;"></div>
+    <div class="square" style="top:200px; left:40px; background:white;"></div>
+    <div class="square" style="top:200px; left:80px; background:black;"></div>
+    <div class="square" style="top:200px; left:120px; background:white;"></div>
+    <div class="square" style="top:200px; left:160px; background:black;"></div>
+    <div class="square" style="top:200px; left:200px; background:white;"></div>
+    <div class="square" style="top:200px; left:240px; background:black;"></div>
+    <div class="square" style="top:200px; left:280px; background:white;"></div>
+
+    <!-- Row 6 -->
+    <div class="square" style="top:240px; left:0px; background:white;"></div>
+    <div class="square" style="top:240px; left:40px; background:black;"></div>
+    <div class="square" style="top:240px; left:80px; background:white;"></div>
+    <div class="square" style="top:240px; left:120px; background:black;"></div>
+    <div class="square" style="top:240px; left:160px; background:white;"></div>
+    <div class="square" style="top:240px; left:200px; background:black;"></div>
+    <div class="square" style="top:240px; left:240px; background:white;"></div>
+    <div class="square" style="top:240px; left:280px; background:black;"></div>
+
+    <!-- Row 7 -->
+    <div class="square" style="top:280px; left:0px; background:black;"></div>
+    <div class="square" style="top:280px; left:40px; background:white;"></div>
+    <div class="square" style="top:280px; left:80px; background:black;"></div>
+    <div class="square" style="top:280px; left:120px; background:white;"></div>
+    <div class="square" style="top:280px; left:160px; background:black;"></div>
+    <div class="square" style="top:280px; left:200px; background:white;"></div>
+    <div class="square" style="top:280px; left:240px; background:black;"></div>
+    <div class="square" style="top:280px; left:280px; background:white;"></div>
+  </div>
+
+</body>
+</html>
